@@ -1,47 +1,81 @@
+
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+<title>Gabriel Foya</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" 
+href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body{
-      background-color: grey;
-}
-h1{ 
-    color:white;
-    text-align:center;
-}
-h2{
-    color:white;
-    text-align:center;
-}
-p{ 
-   font-family:verdana;
-   font-size:20px;
-}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
 </style>
-<title>My Portfolio</title>
-</head>
+<body>
 
-<h1>  About Gabriel Foya</h1>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About me</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Register</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Courses</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">My CV</a>
+  </div> 
 
-<p>
-I was born on 6th July 2001 in Dar es Salaam,Tanzania.
-I studied primary education at Love Care Education Children Centre.
-I studied secondary education at St Joseph Millennium Secondary School in Ordinary Level and at Marian Boys High School in Advanced Level.
-I am currently pursuing a bachelors degree in Business Information Technology at the University of Dar es Salaam.
-I love playing video games,swimming,watching action movies,listening to electronic dance music and bike riding.
-I once held a leadership position on my ordinary level secondary education as the assistant dormitory prefect.
-</p>
+<!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">About me</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Register</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Courses</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">My Cv</a>
+  </div>
 
-<h1>My Future Goals</h1>
+</div>
 
-<p>
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">GABRIEL FOYA</h1>
+  <p class="w3-xlarge">Template by w3.css</p>
+  <button <a href="#" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Contact Me </a></button>
 
-I want to become a Technical Analyst at a large brokerage firm mostly dealing with financial instruments such as currencies and indices.
-I also want to achieve financial freedom through investing in multiple assets  and also I would like to travel around the world in various places,meet different people and get to interact with different cultures.
-I would like also to help my family,relatives and friends financially and support them to achieve their goals and dreams.Not only them but also helping the poor,orphans and disabled people to get their basic needs.
-I would also want to become the best version of myself and make the world a better place.
-</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Welcome To My Website</h1>
+      <h5 class="w3-padding-32">Gabriel Foya is a Tanzanian technical analyst working at Exness, an international brokerage firm based on Cyprus. He trade the financial markets especially the foreign exchange market.</h5>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32"><p>Follow me on</p>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
-
 </html>
